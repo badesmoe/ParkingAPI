@@ -9,5 +9,16 @@
         public string Variant { get; set; } = String.Empty;
         public string Color { get; set; } = String.Empty;
         public string ChassisType { get; set; } = String.Empty;
+
+        public Car() { }
+        public Car(string licensePlate, string make, string model, string variant, string color, string chassisType)
+        {
+            LicensePlate = licensePlate;
+            Make = make;
+            Model = model;
+            Variant = variant;
+            Color = color;
+            ChassisType = chassisType;
+        }
     }
 }
