@@ -3,19 +3,19 @@
     public class Car
     {
         public int Id { get; set; }
-        public string LicensePlate { get; set; } = String.Empty;
-        public string Make { get; set; } = String.Empty;
-        public string Model { get; set; } = String.Empty;
-        public string Variant { get; set; } = String.Empty;
-        public string Color { get; set; } = String.Empty;
-        public string ChassisType { get; set; } = String.Empty;
+        public string LicensePlate { get; set; } = string.Empty;
+        public Variant Variant { get; set; } = null!;
+        public int VariantId { get; set; }
+        public Color Color { get; set; } = null!;
+        public int ColorId { get; set; }
+        public ChassisType ChassisType { get; set; } = null!;
+        public int ChassisTypeId { get; set; }
 
         public Car() { }
-        public Car(string licensePlate, string make, string model, string variant, string color, string chassisType)
+        public Car(int id, string licensePlate, Variant variant, Color color, ChassisType chassisType)
         {
+            Id = id;
             LicensePlate = licensePlate;
-            Make = make;
-            Model = model;
             Variant = variant;
             Color = color;
             ChassisType = chassisType;
