@@ -1,7 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using ParkingAPI.Data;
 using ParkingAPI.Repositories;
-using ParkingAPI.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

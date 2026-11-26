@@ -18,7 +18,7 @@ namespace ParkingAPI.Repositories
             return car;
         }
 
-        public Car? Update(Car car)
+        public Car Update(Car car)
         {
             var existingCar = _context.Cars.FirstOrDefault(c => c.Id == car.Id);
             if (existingCar != null)
